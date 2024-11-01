@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="notification" id="notification"></div>
+  <h2>Create New User</h2>
+  <form class="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required minlength="3" placeholder="Enter full name">
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,}"
+      title="Username should be at least 3 characters, alphanumeric with underscores" placeholder="Choose a username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[\+0-9\-\(\) ]{10,}" title="Enter a valid phone number"
+      placeholder="Phone number">
+
+
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId" placeholder="User ID">
+
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" required placeholder="https://example.com">
+
+    <h3>Address</h3>
+    <label for="street">Street:</label>
+    <input type="text" id="street" name="street" required placeholder="Street address">
+
+    <label for="suite">Suite:</label>
+    <input type="text" id="suite" name="suite" placeholder="Apartment or suite">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required placeholder="City">
+
+    <label for="zipcode">Zip Code:</label>
+    <input type="text" id="zipcode" name="zipcode" required pattern="[0-9]{5}" title="Enter a 5-digit zip code"
+      placeholder="Zip Code">
+
+    <button type="submit">Create User</button>
+  </form>
+
+  <h2>All Users</h2>
+  <div class="userList"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
