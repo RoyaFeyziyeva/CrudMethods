@@ -151,9 +151,5 @@ userForm.addEventListener("submit", (e) => {
 
 window.onload = getAllUsers; // sehife yuklendikde butun istifadeci melumatlari yuklenir.
 
-//! 1)neleri qarisdiriram async await i harda yazacam yerleri qarisir jeiufubf
-//! 2) Bu hisseni her defe kopyalayiram is it right?? meselen put u balaca herfle yazsam ne olar?
-//^  method: "PUT",
-//^ headers: { "Content-Type": "application/json" },
-//^ body: JSON.stringify(data),
-// ! 3) put yox patch yazsaaq??
+
+
